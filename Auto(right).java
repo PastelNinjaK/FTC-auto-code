@@ -65,9 +65,9 @@ public class Auto2425 extends LinearOpMode {
         int time = TimeDelay(0.6096,0.5);// we only need 1 because this is measuring how long it takes for the robot to travel 1 tile.
 
         program(-1.0, -1.0, time); // Backwards
-        program(-1.0, 1.0, 1000);  // Rotate counter-clockwise (can't change this rn cuz we need to find the time it take for the robot to turn 90 degrees).
+        program(-1.0, 1.0, 1);  // Rotate counter-clockwise (can't change this rn cuz we need to find the time it take for the robot to turn 90 degrees).
         program(1.0, 1.0, time);   // Forward (Time is multiplied by 4 because the variable time is calculating how long it take for the robot to travel across 1 Tile).
-        program(1.0, -1.0, 1000);  // Rotate for parking(Clockwise)(Same for the first rotate)
+        program(1.0, -1.0, 1);  // Rotate for parking(Clockwise)(Same for the first rotate)
         program(1.0, 1.0, time);   // Forward to observation zone
 
         // Stop motors
