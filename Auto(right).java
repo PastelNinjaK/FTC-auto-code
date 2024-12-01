@@ -19,13 +19,13 @@ public class Auto2425 extends LinearOpMode {
   private Servo wrist;
 
   //Java function for programing the motors
-  public void program(int leftPower, int rightPower, int delay){
+  public void program(double leftPower, double rightPower, double delay){
     leftDrive.setPower(leftPower);
     rightDrive.setPower(rightPower);
-    sleep(1000 * delay);
+    sleep((long) (1000 * delay));
   }//end of function
 
-  public void TimeDelay(int dist, int speed){
+  public void TimeDelay(double dist, double speed){
     return dist/speed;
     //DIST AND SPEED NEED TO BE IN METERS AND METERS PER SECOND RESPECTIVELY!
   }
@@ -53,7 +53,7 @@ public class Auto2425 extends LinearOpMode {
     waitForStart();
 
     if (opModeIsActive()) {
-      while (opModeIsActive()) {
+      
         //Parking to observation zone
         //sleep time need calibration
         //Assuming we place our robot at F2 (open link from next line) and our robot has a maximum speed of 0.5m/s.
@@ -76,7 +76,7 @@ public class Auto2425 extends LinearOpMode {
 
 
 
-      }
+      
     }
   }
 }
