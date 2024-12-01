@@ -22,10 +22,10 @@ public class Auto2425 extends LinearOpMode {
   public void program(double leftPower, double rightPower, double delay){
     leftDrive.setPower(leftPower);
     rightDrive.setPower(rightPower);
-    sleep((long)1000 * delay);
+    sleep((long) 1000 * delay);
   }//end of function
 
-  public void TimeDelay(int dist, int speed){
+  public void TimeDelay(double dist, double speed){
     return dist/speed;
     //DIST AND SPEED NEED TO BE IN METERS AND METERS PER SECOND RESPECTIVELY!
   }
