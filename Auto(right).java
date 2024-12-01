@@ -62,7 +62,7 @@ public class Auto2425 extends LinearOpMode {
         // 1 tile = 2ff^2 / 0.6096 m
         // 0.5 is NOT the max speed of our robot, it's just me guessing.
         // once we actually get the top speed of our robot, we use that value as seconnd parameter of the TimeDelay function.
-        int time = TimeDelay(0.6096,0.5);// we only need 1 because this is measuring how long it takes for the robot to travel 1 tile.
+        double time = TimeDelay(0.6096,0.5);// we only need 1 because this is measuring how long it takes for the robot to travel 1 tile.
 
         program(-1.0, -1.0, time); // Backwards
         program(-1.0, 1.0, 1);  // Rotate counter-clockwise (can't change this rn cuz we need to find the time it take for the robot to turn 90 degrees).
