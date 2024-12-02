@@ -15,7 +15,7 @@ public class Auto2425 extends LinearOpMode {
   private DcMotor leftDrive;
   private DcMotor rightDrive;
   private DcMotor armMotor;
-  private CRServo wheelServo; // Declare the servo
+  private CRServo wheelServo; // Declare thAuto(left PushBot).javae servo
   private Servo wrist;
 
   //Java function for programing the motors
@@ -82,14 +82,6 @@ public class Auto2425 extends LinearOpMode {
 
         program(1.0, 1.0, time * 3.5);// Forward to push all the scoring elements to the observation zone
 
-        program(-1.0, -1.0, time * 2.5);//Reverse to do lvl 1 ascend
-        program(1.0, -1.0, 1);// Rotate Clockwise to set up for lvl 1 ascend
-        program(1.0, 1.0, time * 2);// Forward to low rung
-        // Set the motor target position and velocity
-        //Arm code inspired by gobilda code
-        armMotor.setTargetPosition((int) (ARM_LEVEL_ONE));
-        ((DcMotorEx) armMotor).setVelocity(2100); // Set motor velocity
-        armMotor.setMode(DcMotor.RunMode.RUN_TO_POSITION); // Ensure the motor runs to the target position
         // Stop motors
         leftDrive.setPower(0);
         rightDrive.setPower(0);
