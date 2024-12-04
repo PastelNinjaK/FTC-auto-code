@@ -10,7 +10,7 @@ import com.qualcomm.robotcore.hardware.Servo;
 import org.firstinspires.ftc.robotcore.external.navigation.CurrentUnit;
 
 @Autonomous(name = "Ultrasonic Sensor Auto Left", group = "Robot")
-public class AutoOp2425(left) extends LinearOpMode {
+public class AutoOp2425_left_ extends LinearOpMode {
     private DcMotor leftDrive;
     private DcMotor rightDrive;
     private DcMotor armMotor;
@@ -47,7 +47,7 @@ public class AutoOp2425(left) extends LinearOpMode {
 
         if (opModeIsActive()) {
             // Fill this up with the program
-
+            program(1.0,1.0,1,ARM_COLLAPSED_INTO_ROBOT,WRIST_FOLDED_IN,INTAKE_OFF);
             // Example telemetry feedback
             if (((DcMotorEx) armMotor).isOverCurrent()) {
                 telemetry.addLine("MOTOR EXCEEDED CURRENT LIMIT!");
