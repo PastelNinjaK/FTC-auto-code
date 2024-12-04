@@ -9,7 +9,7 @@ import com.qualcomm.robotcore.hardware.Servo;
 
 import org.firstinspires.ftc.robotcore.external.navigation.CurrentUnit;
 
-@Autonomous(name = "AutoOp2425_left_", group = "Robot")
+@Autonomous(name = "AutoOp2425_right_", group = "Robot")
 public class AutoOp2425_right_ extends LinearOpMode {
     private DcMotor leftDrive;
     private DcMotor rightDrive;
